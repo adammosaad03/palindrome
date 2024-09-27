@@ -1,0 +1,28 @@
+ const text = document.getElementById('text-input');
+ const button = document.getElementById('check-btn');
+ const result = document.getElementById('result');
+
+
+ const PalCheck = () => {
+  const Text = text.value.trim();
+  
+
+       if (Text === ""){alert("Please input a value");
+                                                return;}
+      const NText = Text.toLowerCase().match(/[a-z0-9 ]/g);
+     
+            if (!NText || NText.length === 0){result.innerText = `${Text} is not a palindrome`
+    return;
+  } const reg = NText.join("")
+  const revText = reg.split("").reverse().join("");
+  
+
+      if (reg === revText) {
+  
+    result.innerText = `${Text} is a palindrome`
+  }  else {
+    result.innerText = `${Text} is not a palindrome`
+  }
+               }
+
+ button.addEventListener("click", PalCheck);
