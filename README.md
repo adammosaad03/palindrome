@@ -17,3 +17,23 @@
         
       </script>
       <a href ="https://adampalindrome.com">Adam's Webpage</a>
+
+img  {
+  width: 203;
+margin: 200 650
+}
+input {
+  width: 203;
+  height: 30;
+  margin: -199 648 ;
+  border-radius:
+  20px;
+}
+button{
+  width: 60;
+  height: 30;
+  border-radius: 20px;
+  margin: -199 795;
+  font-weight: bold;
+  ;
+}
